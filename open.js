@@ -62,9 +62,9 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
     }`
                     }
                     else{
-                        finalStr += `${classVariable}.${functionName}.implementation = function(${argParamString}){ \
+                        finalStr += `${classVariable}.${functionName}.implementation = function(${argParamsString}){ \
             console.log('called ${functionName} !')  
-            return this.${functionName}(${argParamString})
+            return this.${functionName}(${argParamsString})
     }`
                     }
                     console.log(finalStr)
@@ -75,7 +75,7 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
                     finalStr += `console.log(${classVariable}.${fieldName}.value)`
 
                 }
-                navigator.clipboard.writeText()
+                navigator.clipboard.writeText(finalStr)
             }
 
     }
