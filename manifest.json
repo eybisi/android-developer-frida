@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Android-dev Frida Snippet",
+    "description": "Copy frida snippets from https://developer.android.com",
+    "version": "1.1",
+    "homepage_url": "https://github.com/eybisi/android-developer-frida",
+    "content_scripts":[
+        {
+            "matches": ["https://developer.android.com/*"],
+            "js":["getOverloads.js"]
+        }
+    ],
+    "background":{
+        "scripts":["open.js"]
+    },
+    "permissions": [
+        "clipboardWrite",
+        "contextMenus"
+    ]
+}
