@@ -7,6 +7,7 @@ It respects if you copied from same class earlier so won't add class variable.
 
 Call `web-ext build` and load zip file as an temporary addon.
 
+[Firefox addon](https://addons.mozilla.org/en-US/firefox/addon/frida-sniper-for-dev-android/)
 
 ### TODO
 
